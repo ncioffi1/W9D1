@@ -1,3 +1,5 @@
+console.log("webpack confirmed working")
+
 const Game = require('./game.js');
 const Asteroid = require('./asteroid.js');
 const MovingObject = require('./moving_object.js');
