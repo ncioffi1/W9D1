@@ -1,12 +1,18 @@
 console.log('im the asteroid')
 
-const MovingObject = require('./moving_object.js')
+const MovingObject = require('./moving-object.js')
 
-function Asteroid(size) {
-    // this.num = num;
-    this.size = size;
-    this.moving_object = new MovingObject(1);
+class Asteroid extends MovingObject {
+    static RADIUS = 25;
+    static COLOR = 'red';
+
 }
+
+// function Asteroid(size) {
+//     // this.num = num;
+//     this.size = size;
+//     this.moving_object = new MovingObject(1);
+// }
 
 module.exports = Asteroid;
 
