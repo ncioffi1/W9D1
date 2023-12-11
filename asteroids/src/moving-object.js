@@ -3,9 +3,9 @@ console.log("im the moving object")
 class MovingObject {
     constructor(pos, vel, radius, color) {
         this.pos = pos;
-        this.vel = vel;
-        this.radius = radius;
         this.color = color;
+        this.radius = radius;
+        this.vel = vel;
     }
 
     draw(ctx) {

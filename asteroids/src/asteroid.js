@@ -1,10 +1,22 @@
 console.log('im the asteroid')
 
 const MovingObject = require('./moving-object.js')
+const Util = require('./utils.js');
+// import * as Util from "./utils.js";
 
 class Asteroid extends MovingObject {
-    static RADIUS = 25;
+    // debugger;
+    static RADIUS = 20;
     static COLOR = 'red';
+
+    constructor(pos) {
+
+        // debugger;
+        super(pos, Util.randomVec(1), Asteroid.RADIUS, Asteroid.COLOR);
+    }
+    
+    
+    // debugger;
 
 }
 
